@@ -1,0 +1,1 @@
+import MyDirective from './mydirective';
