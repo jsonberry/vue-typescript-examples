@@ -1,1 +1,1 @@
-import MyDirective from './mydirective';
+import './mydirective'

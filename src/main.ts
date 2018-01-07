@@ -1,17 +1,20 @@
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
+import './hooks'
+import './filters'
+import './plugins'
+import './directives'
 
-import Plugins from './plugins'
-import Filters from './filters'
-import Directives from './directives';
+import Vue from 'vue'
+import router from './router'
+import store from './store'
+import App from './App.vue'
 
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
-  router,
-  template: '<App/>',
-  components: { App }
+        el: '#app',
+        router,
+        store,
+        template: '<App/>',
+        components: { App },
 })

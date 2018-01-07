@@ -7,21 +7,19 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import Component from 'vue-class-component'
+import { Component } from 'vue-property-decorator'
 import { Watch } from 'vue-property-decorator'
 
 @Component
 export default class MsgComponent extends Vue {
+        get msg() {
+                return this.$route.params.msg
+        }
 
-    get msg () {
-      return this.$route.params.msg
-    }
-
-    @Watch('$route')
-    onRouteChange (to, from) {
-        console.log(to)
-        console.log(from)
-    }
-
+        @Watch('$route')
+        onRouteChange(to, from) {
+                console.log(to)
+                console.log(from)
+        }
 }
 </script>

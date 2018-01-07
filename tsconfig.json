@@ -11,7 +11,9 @@
     "baseUrl": ".",
     "paths": {
         "@/router/*": ["./src/router/*"],
-        "@/components/*": ["./src/components/*"]
+        "@/components/*": ["./src/components/*"],
+        "@/types": ["./src/types/index"],
+        "@/vue-script": ["./src/vue-script"]
     }
   }
 }

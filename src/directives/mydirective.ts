@@ -1,11 +1,23 @@
 import Vue from 'vue'
+import { DirectiveOptions, VNodeDirective } from 'vue'
 
-Vue.directive('ey-a11y', {
-  bind: (el, binding) => {
-    const label = binding && binding.value && binding.value.label || el.textContent
+type BindingPayload = {
+        label: string
+        enabled: boolean
+}
 
+const directive: DirectiveOptions = {
+        bind: (el, binding) => {
+                const payload: BindingPayload = binding.value
+                let label = (binding.value && binding.value.label) || {}
 
-    el.setAttribute('tabindex', 0)
-    el.setAttribute('aria-label', label)
-  }
-})
+                if (binding.modifiers.label) {
+                        label = binding.value
+                }
+
+                el.setAttribute('tabindex', '0')
+                el.setAttribute('aria-label', label)
+        },
+}
+
+Vue.directive('ey-a11y', directive)

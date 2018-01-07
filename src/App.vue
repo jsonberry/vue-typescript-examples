@@ -1,21 +1,21 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
+    <router-link to="/">Home</router-link>
     <router-view/>
   </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-import Component from 'vue-class-component';
+import { Vue, Component, Provide } from '@/vue-script'
 
-@Component
+@Component({})
 export default class App extends Vue {
-  name: 'app'
+        @Provide() author = "Jason Awbrey"
 }
 </script>
 
-<style>
+<style scoped>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -23,5 +23,11 @@ export default class App extends Vue {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+
+}
+
+a {
+        display: block;
+        color: #42b983;
 }
 </style>

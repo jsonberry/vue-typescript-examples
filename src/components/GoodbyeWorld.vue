@@ -22,14 +22,13 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import Component from 'vue-class-component'
+import { Component } from 'vue-property-decorator'
 
 @Component({
-    name: 'GoodbyeWorld',
+        name: 'GoodbyeWorld',
 })
 export default class GoodbyeWorld extends Vue {
-
-      msg = 'Welcome to Your Vue.js App'
+        msg = 'Welcome to Your Vue.js App'
 }
 </script>
 

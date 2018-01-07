@@ -29,44 +29,40 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import Component from 'vue-class-component'
+import { Component } from 'vue-property-decorator'
 
 @Component
 export default class ChildComponent extends Vue {
-
         stuff = ['pillow', 'couch', 'phone', 'card']
         show = false
 
-        beforeEnter (el, done) {
-            // el.style = {
-            //     position: 'relative',
-            //     left: '-400px'
-            // }
+        beforeEnter(el, done) {
+                // el.style = {
+                //     position: 'relative',
+                //     left: '-400px'
+                // }
 
-            el.style.position = 'relative';
-            el.style.left = '-400px';
-            console.log('attrs', el.dataset.index);
+                el.style.position = 'relative'
+                el.style.left = '-400px'
+                console.log('attrs', el.dataset.index)
         }
 
-        enter (el, done) {
-            el.animate([
-                { left: '-400px' },
-                { left: 0 }
-            ], {
-                duration: 350 * el.dataset.index
-            })
+        enter(el, done) {
+                el.animate([{ left: '-400px' }, { left: 0 }], {
+                        duration: 350 * el.dataset.index,
+                })
         }
 
-        handleStuff (stuff) {
-            this.$emit('balls', stuff)
+        handleStuff(stuff) {
+                this.$emit('balls', stuff)
         }
 
-        handleMouseDown () {
-            this.$emit('balls', 'mousedown')
+        handleMouseDown() {
+                this.$emit('balls', 'mousedown')
         }
 
-        handleMouseUp () {
-            this.$emit('balls', 'mouseup')
+        handleMouseUp() {
+                this.$emit('balls', 'mouseup')
         }
 }
 </script>

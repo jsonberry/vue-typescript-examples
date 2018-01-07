@@ -1,1 +1,1 @@
-import MyFilter from './myfilter'
+import './myfilter'
