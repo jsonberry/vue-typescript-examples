@@ -35,7 +35,7 @@ export default class FormTextInput extends Vue {
          */
         @Model('bar') foo: string
 
-        // $event is passed implicitly from the @changed directive
+        // $event is passed implicitly from the @change directive
         bar(ev) {
                 this.$emit('bar', ev.target.value)
         }
