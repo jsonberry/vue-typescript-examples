@@ -8,8 +8,6 @@
 import { Vue, Component } from '@/vue-script'
 
 @Component({})
-export default class DirectiveExample extends Vue {
-
-}
+export default class DirectiveExample extends Vue {}
 </script>
 

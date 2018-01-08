@@ -10,7 +10,6 @@ import { Vue, Component, Inject } from '@/vue-script'
 
 @Component({})
 export default class ChildDepInject extends Vue {
-
         /**
          *      Try switching between the Injected "foo" values below
          *      Notice how the dependencies are set up in ParentDependencyInjection.vue
@@ -28,7 +27,6 @@ export default class ChildDepInject extends Vue {
          */
         // @Inject('foo1') foo
         @Inject('foo2') foo
-
 
         /**
          *      This is provided app wide

@@ -1,6 +1,7 @@
 <template>
         <div>
-                <h1>We declare the form model so that it can be <a href="https://vuejs.org/v2/guide/reactivity.html#Declaring-Reactive-Properties">reactive</a></h1>
+                <h1>path: components/forms</h1>
+                <h2>We declare the form model so that it can be <a href="https://vuejs.org/v2/guide/reactivity.html#Declaring-Reactive-Properties">reactive</a></h2>
                 <form @submit.prevent="submit()">
                         <fieldset>
                                 <legend>Non-custom Inputs</legend>
@@ -46,8 +47,9 @@ import CustomFormInput from '@/components/forms/CustomFormInput.vue'
         },
 })
 export default class FormPage extends Vue {
-        public formData = { // With Vue in JS, this would be in the data section of the Component
-                // We declare the form model so that it can be reactive https://vuejs.org/v2/guide/reactivity.html#Declaring-Reactive-Properties
+        // With Vue in JS, this would be in the data section of the Component
+        // We declare the form model so that it can be reactive https://vuejs.org/v2/guide/reactivity.html#Declaring-Reactive-Properties
+        public formData = {
                 firstName: {
                         placeholder: 'First Name',
                         id: 'firstName',
@@ -60,7 +62,8 @@ export default class FormPage extends Vue {
                 },
         }
 
-        get fullName() { // Vue Computed Property
+        // Vue Computed Property
+        get fullName() {
                 return `${this.formData.firstName.entry} ${this.formData
                         .lastName.entry}`
         }
@@ -73,20 +76,10 @@ export default class FormPage extends Vue {
 
 <style scoped>
 fieldset {
-        padding: 1.5rem;
-        padding-top: 0;
+        padding: 0 1.5rem 2.5rem;
         margin-bottom: 1rem;
         max-width: 250px;
         margin-left: auto;
         margin-right: auto;
-}
-h3 {
-        font-weight: normal;
-}
-h1 {
-        font-weight: normal;
-}
-a {
-        color: #42b983;
 }
 </style>

@@ -3,6 +3,7 @@ import ParentForm from '@/components/forms/ParentForm.vue'
 import ParentDependencyInjection from '@/components/dependency-injection/ParentDependencyInjection.vue'
 import ParentCustomVueTsDecorator from '@/components/custom-vue-ts-decorator/ParentCustomVueTsDecorator.vue'
 import DirectiveExample from '@/components/directives/DirectiveExample.vue'
+import LifecycleExamples from '@/components/lifecycles/LifecycleExamples.vue'
 
 export const routes = [
         {
@@ -39,5 +40,10 @@ export const routes = [
                 path: '/animation',
                 name: 'Animation',
                 component: ParentCustomVueTsDecorator,
+        },
+        {
+                path: '/lifecycles',
+                name: 'Lifecycles (takes up to 3 seconds to load)',
+                component: LifecycleExamples,
         },
 ]

@@ -1,5 +1,6 @@
 <template>
         <div>
+                <h1>path: components/dependency-injection</h1>
                 <child-depency-injection />
         </div>
 </template>
@@ -18,4 +19,3 @@ export default class ParentDepInject extends Vue {
         @Provide('foo2') foo2 = 'baz'
 }
 </script>
-
