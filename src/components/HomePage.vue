@@ -7,6 +7,7 @@
                                 <router-link :to="path">{{ name }}</router-link>
                         </li>
                 </ul>
+                <h3>Hint: open your browser javascript console</h3>
         </div>
 </template>
 

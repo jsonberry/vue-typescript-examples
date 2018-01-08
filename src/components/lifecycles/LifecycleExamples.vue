@@ -181,14 +181,24 @@ export default class LifecycleExamples extends Vue {
                         })
         }
 
-        beforeRouteLeave(to, from, next) {
+        /**
+         *      The leave guard is usually used to prevent the user from accidentally leaving the route with unsaved edits.
+         *      The navigation can be canceled by calling next(false).
+         */
+        async beforeRouteLeave(to, from, next) {
                 const answer = window.confirm(
-                        'Do you really want to leave? you have unsaved changes!'
+                        '(beforeRouteLeave) Do you really want to leave? (Leaving will take 3 seconds)'
                 )
                 if (answer) {
-                        next()
+                        // async/await being used here just as example, just to show it can be used with Vue Router Navigation Guards
+                        await new Promise((resolve, reject) => {
+                                setTimeout(() => {
+                                        resolve("Is that air you think you're breathing?")
+                                }, 3000);
+                        })
+                        next() // let me outta here!
                 } else {
-                        next(false)
+                        next(false) // oops no I wanna stay here!
                 }
         }
 }
