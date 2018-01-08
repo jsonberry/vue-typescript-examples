@@ -20,4 +20,4 @@ const directive: DirectiveOptions = {
         },
 }
 
-Vue.directive('ey-a11y', directive)
+Vue.directive('a11y', directive)
