@@ -1,13 +1,12 @@
 <template>
         <div class="hello">
-                <h1>Vue Examples</h1>
-                <h2>In the flavor of TypeScript</h2>
+                <h1>Vue TypeScript Examples</h1>
+                <p>Hint: open your browser JavaScript console</p>
                 <ul>
                         <li v-for="({ path, name }, i) in links" :key="i">
                                 <router-link :to="path">{{ name }}</router-link>
                         </li>
                 </ul>
-                <h3>Hint: open your browser javascript console</h3>
         </div>
 </template>
 

@@ -13,7 +13,8 @@
         "@/router/*": ["./src/router/*"],
         "@/components/*": ["./src/components/*"],
         "@/types": ["./src/types/index"],
-        "@/vue-script": ["./src/vue-script"]
+        "@/vue-script": ["./src/vue-script"],
+        "@/style/*": ["./src/style/*"]
     }
   }
 }
