@@ -19,7 +19,7 @@ export default class FormTextInput extends Vue {
         /**
          *      Under the hood this is using v-model
          *      The connection to the data model is assigned as "foo"
-         *      The event emitted "changed" allows for a proper binding
+         *      The event emitted "bar" allows for a proper binding
          *      To the parent where the form model
          *
          *      By default the property would be "value" and the
@@ -35,7 +35,7 @@ export default class FormTextInput extends Vue {
          */
         @Model('bar') foo: string
 
-        // $event is passed implicitly from the @changed directive
+        // $event is passed implicitly from the @change directive
         bar(ev) {
                 this.$emit('bar', ev.target.value)
         }
