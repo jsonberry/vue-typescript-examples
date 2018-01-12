@@ -1,6 +1,8 @@
 <template>
-<div>
-</div>
+        <div>
+                <h1>path: components/custom-vue-ts-decorator</h1>
+                <p>Check the code, and your console</p>
+        </div>
 </template>
 
 <script lang="ts">

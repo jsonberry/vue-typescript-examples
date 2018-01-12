@@ -1,5 +1,5 @@
 <template>
-        <div>
+        <div :class="style">
                 <h1>path: components/forms</h1>
                 <h2>We declare the form model so that it can be <a href="https://vuejs.org/v2/guide/reactivity.html#Declaring-Reactive-Properties">reactive</a></h2>
                 <form @submit.prevent="submit()">
@@ -40,6 +40,7 @@
 <script lang="ts">
 import { Vue, Component, Watch } from '@/vue-script'
 import CustomFormInput from '@/components/forms/CustomFormInput.vue'
+import { css } from 'emotion'
 
 @Component({
         components: {
@@ -62,6 +63,18 @@ export default class FormPage extends Vue {
                 },
         }
 
+        get style() {
+                return css(`
+                      fieldset {
+                                padding: 0 1.5rem 2.5rem;
+                                margin-bottom: 1rem;
+                                max-width: 250px;
+                                margin-left: auto;
+                                margin-right: auto;
+                      }
+                `)
+        }
+
         // Vue Computed Property
         get fullName() {
                 return `${this.formData.firstName.entry} ${this.formData
@@ -73,13 +86,3 @@ export default class FormPage extends Vue {
         }
 }
 </script>
-
-<style scoped>
-fieldset {
-        padding: 0 1.5rem 2.5rem;
-        margin-bottom: 1rem;
-        max-width: 250px;
-        margin-left: auto;
-        margin-right: auto;
-}
-</style>

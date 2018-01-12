@@ -16,4 +16,3 @@ import { injectedDirective } from './directiveToInject';
 })
 export default class DirectiveExample extends Vue {}
 </script>
-

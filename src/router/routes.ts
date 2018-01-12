@@ -13,7 +13,7 @@ export const routes = [
         },
         {
                 path: '/forms',
-                name: 'Forms, with and without Custom Inputs',
+                name: 'Forms (with and without custom Vue  inputs)',
                 component: ParentForm,
         },
         {

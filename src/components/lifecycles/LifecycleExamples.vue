@@ -2,7 +2,7 @@
         <div>
                 <h1>path: components/lifecycles</h1>
                 <p>{{ componentProperty }}</p>
-                <button @click="changeComponentProperty()">Trigger beforeUpdate / update Lifecycles</button>
+                <button :class="style" @click="changeComponentProperty()">Trigger beforeUpdate / update Lifecycles</button>
                 <p>By: {{ author }}</p>
         </div>
 </template>
@@ -13,6 +13,9 @@ import { Component as ComponentInterface } from 'vue'
 import axios from 'axios'
 import CustomFormInput from '@/components/forms/CustomFormInput.vue'
 
+import { BUTTON } from '@/style'
+import { css } from 'emotion';
+
 @Component({})
 export default class LifecycleExamples extends Vue {
         componentProperty = 'foo'
@@ -21,6 +24,12 @@ export default class LifecycleExamples extends Vue {
         changeComponentProperty() {
                 this.componentProperty =
                         this.componentProperty === 'foo' ? 'bar' : 'foo'
+        }
+
+        get style() {
+                return css({
+                        ...BUTTON
+                })
         }
 
         /**
@@ -143,6 +152,7 @@ export default class LifecycleExamples extends Vue {
         }
 
         /**
+         *     TODO: Move the router lifecycle guards to the router section
          *      Vue Router In-Component Navigation Guards
          *      https://router.vuejs.org/en/advanced/navigation-guards.html
          */
@@ -203,13 +213,3 @@ export default class LifecycleExamples extends Vue {
         }
 }
 </script>
-
-<style scoped>
-fieldset {
-        padding: 0 1.5rem 2.5rem;
-        margin-bottom: 1rem;
-        max-width: 250px;
-        margin-left: auto;
-        margin-right: auto;
-}
-</style>

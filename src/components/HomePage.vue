@@ -1,5 +1,5 @@
 <template>
-        <div class="hello">
+        <div :class="style">
                 <h1>Vue TypeScript Examples</h1>
                 <p>Hint: open your browser JavaScript console</p>
                 <ul>
@@ -13,32 +13,20 @@
 <script lang="ts">
 import { Component, Vue } from '@/vue-script'
 import { routes } from '@/router/routes'
+import * as Style from '@/style'
+import { cx, css } from 'emotion'
 
 @Component({})
 export default class HomePage extends Vue {
         get links() {
-                return routes.filter(({ path }) => path !== '/' )
+                return routes.filter(({ path }) => path !== '/')
+        }
+
+        get style() {
+                return css({
+                        ul: Style.UNORDERED_LIST,
+                        li: Style.LIST_ITEM,
+                })
         }
 }
 </script>
-
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
-</style>
