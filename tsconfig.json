@@ -14,7 +14,8 @@
         "@/components": ["./src/components/index"],
         "@/types": ["./src/types/index"],
         "@/vue-script": ["./src/vue-script"],
-        "@/style": ["./src/style/index"]
+        "@/style": ["./src/style/index"],
+        "@/src/*": ["./src/*"]
     }
   }
 }

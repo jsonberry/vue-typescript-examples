@@ -14,10 +14,10 @@ export default class MethodsExample extends Vue {
 
                 switch (evenOrOdd.type) { // delete ".type", and put a "." on the end of evenOrOdd - notice we get an API for the var, because it's typed in the return for the timeIs method
                         case 'even':
-                                alert(`Time is even: ${evenOrOdd.time}`)
+                                alert(`Even: ${evenOrOdd.time}`)
                                 break
                         case 'odd':
-                                alert(`Time is odd: ${evenOrOdd.time}`)
+                                alert(`Odd: ${evenOrOdd.time}`)
                 }
         }
 

@@ -51,4 +51,9 @@ export const routes = [
                 name: 'Methods',
                 component: Components.MethodsExample,
         },
+        {
+                path: '/event-emitting',
+                name: 'Event Emitting',
+                component: Components.EventEmittingExample,
+        },
 ]

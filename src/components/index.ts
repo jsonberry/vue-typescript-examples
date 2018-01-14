@@ -8,3 +8,5 @@ export { default as ParentCustomVueTsDecorator }  from './custom-vue-ts-decorato
 export { default as DirectiveExample }  from './directives/DirectiveExample.vue'
 export { default as LifecycleExamples }  from './lifecycles/LifecycleExamples.vue'
 export { default as MethodsExample }  from './methods/MethodsExample.vue'
+export { default as ChildEventEmittingExample } from './components-event-emitting/ChildEventEmittingExample.vue'
+export { default as EventEmittingExample } from './components-event-emitting/EventEmittingExample.vue'

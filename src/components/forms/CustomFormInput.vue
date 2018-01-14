@@ -13,7 +13,7 @@
 import { Vue, Component, Prop, Model } from '@/vue-script'
 
 @Component({})
-export default class FormTextInput extends Vue {
+export default class CustomFormInput extends Vue {
         @Prop() placeholder: string
 
         /**
