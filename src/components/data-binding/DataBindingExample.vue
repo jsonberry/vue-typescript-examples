@@ -10,11 +10,11 @@
 import { Vue, Component } from '@/vue-script'
 
 @Component({
-        data() {
-                return {
-                        fooNonClass: 'this is a public var (non-class-binding)', // not required for Vue + TypeScript
-                }
-        },
+        data() { // none of this
+                return { // is required
+                        fooNonClass: 'this is a public var (non-class-binding)', // when using Vue + TypeScript
+                } // here just as example
+        }, // All of these can be declared as members of the class, and will be reactive
 })
 export default class DataBindingExample extends Vue {
         public fooClass = 'this is a public var (class-binding)' // Class members will become part of the Vue instance and be reactive

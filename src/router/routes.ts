@@ -46,4 +46,9 @@ export const routes = [
                 name: 'Data Binding',
                 component: Components.DataBindingExample,
         },
+        {
+                path: '/methods',
+                name: 'Methods',
+                component: Components.MethodsExample,
+        },
 ]

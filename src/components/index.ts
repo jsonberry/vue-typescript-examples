@@ -7,3 +7,4 @@ export { default as ParentDependencyInjection }  from './dependency-injection/Pa
 export { default as ParentCustomVueTsDecorator }  from './custom-vue-ts-decorator/ParentCustomVueTsDecorator.vue'
 export { default as DirectiveExample }  from './directives/DirectiveExample.vue'
 export { default as LifecycleExamples }  from './lifecycles/LifecycleExamples.vue'
+export { default as MethodsExample }  from './methods/MethodsExample.vue'
