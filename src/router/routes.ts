@@ -1,49 +1,49 @@
-import HomePage from '@/components/HomePage.vue'
-import ParentForm from '@/components/forms/ParentForm.vue'
-import ParentDependencyInjection from '@/components/dependency-injection/ParentDependencyInjection.vue'
-import ParentCustomVueTsDecorator from '@/components/custom-vue-ts-decorator/ParentCustomVueTsDecorator.vue'
-import DirectiveExample from '@/components/directives/DirectiveExample.vue'
-import LifecycleExamples from '@/components/lifecycles/LifecycleExamples.vue'
+import * as Components from '@/components'
 
 export const routes = [
         {
                 path: '/',
                 name: 'Home',
-                component: HomePage,
+                component: Components.HomePage,
         },
         {
                 path: '/forms',
                 name: 'Forms (with and without custom Vue  inputs)',
-                component: ParentForm,
+                component: Components.ParentForm,
         },
         {
                 path: '/dependency-injection',
                 name: 'Dependency Injection',
-                component: ParentDependencyInjection,
+                component: Components.ParentDependencyInjection,
         },
         {
                 path: '/custom-directives',
                 name: 'Directives',
-                component: DirectiveExample,
+                component: Components.DirectiveExample,
         },
         {
                 path: '/custom-decorator',
                 name: 'Custom TypeScript Decorator',
-                component: ParentCustomVueTsDecorator,
+                component: Components.ParentCustomVueTsDecorator,
         },
         {
                 path: '/style',
                 name: 'Style: CSS, SCSS, Scoped, CSS-in-TS/JS',
-                component: ParentCustomVueTsDecorator,
+                component: Components.ParentCustomVueTsDecorator,
         },
         {
                 path: '/animation',
                 name: 'Animation',
-                component: ParentCustomVueTsDecorator,
+                component: Components.ParentCustomVueTsDecorator,
         },
         {
                 path: '/lifecycles',
                 name: 'Lifecycles (takes up to 3 seconds to load)',
-                component: LifecycleExamples,
+                component: Components.LifecycleExamples,
+        },
+        {
+                path: '/data-binding',
+                name: 'Data Binding',
+                component: Components.DataBindingExample,
         },
 ]

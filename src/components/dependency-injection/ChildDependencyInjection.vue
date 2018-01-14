@@ -9,7 +9,7 @@
 import { Vue, Component, Inject } from '@/vue-script'
 
 @Component({})
-export default class ChildDepInject extends Vue {
+export default class ChildDependencyInjection extends Vue {
         /**
          *      Try switching between the Injected "foo" values below
          *      Notice how the dependencies are set up in ParentDependencyInjection.vue

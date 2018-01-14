@@ -1,17 +1,17 @@
 <template>
         <div>
                 <h1>path: components/dependency-injection</h1>
-                <child-depency-injection />
+                <child-dependency-injection />
         </div>
 </template>
 
 <script lang="ts">
 import { Vue, Component, Provide } from '@/vue-script'
-import ChildDepencyInjection from '@/components/dependency-injection/ChildDepencyInjection.vue'
+import { ChildDependencyInjection } from '@/components'
 
 @Component({
         components: {
-                ChildDepencyInjection,
+                ChildDependencyInjection,
         },
 })
 export default class ParentDepInject extends Vue {
