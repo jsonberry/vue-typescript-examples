@@ -13,3 +13,4 @@ export { default as EventEmittingExample } from './components-event-emitting/Eve
 export { default as PassingPropertiesDownExampleChild } from './passing-properties-down/PassingPropertiesDownExampleChild.vue'
 export { default as PassingPropertiesDownExample } from './passing-properties-down/PassingPropertiesDownExample.vue'
 export { default as WatchExample } from './watch/WatchExample.vue'
+export { default as ComputedPropertiesExample } from './computed-properties/ComputedPropertiesExample.vue'

@@ -25,14 +25,15 @@ export default class App extends Vue {
         }
 
         created() {
-                injectGlobal( // just sets all the headers with some style
-                        Array.from(
-                                new Array(6),
-                                (x, i) => `h${i + 1}`
-                        ).reduce((acc, curr, i) => {
-                                acc[curr] = Style.HEADER
-                                return acc
-                        }, {})
+                injectGlobal(
+                        // just sets all the headers with some style
+                        Array.from(new Array(6), (x, i) => `h${i + 1}`).reduce(
+                                (acc, curr, i) => {
+                                        acc[curr] = Style.HEADER
+                                        return acc
+                                },
+                                {},
+                        ),
                 )
         }
 }

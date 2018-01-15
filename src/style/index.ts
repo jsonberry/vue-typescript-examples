@@ -17,6 +17,9 @@ export const HEADER = {
 export const UNORDERED_LIST = {
         listStyleType: 'none',
         padding: 0,
+        textAlign: 'left',
+        maxWidth: '500px',
+        margin: '0 auto',
 }
 
 export const LIST_ITEM = {

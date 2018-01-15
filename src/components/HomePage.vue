@@ -19,7 +19,13 @@ import { cx, css } from 'emotion'
 @Component({})
 export default class HomePage extends Vue {
         get links() {
-                return routes.filter(({ path }) => path !== '/')
+                return routes
+                        .filter(({ name }) => name !== 'Home')
+                        .sort((a, b) => {
+                                if (a.name < b.name) return -1
+                                if (a.name > b.name) return 1
+                                return 0
+                        })
         }
 
         get style() {

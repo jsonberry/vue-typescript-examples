@@ -66,4 +66,9 @@ export const routes = [
                 name: 'Watch (..for changes to data, and respond)',
                 component: Components.WatchExample,
         },
+        {
+                path: '/computed-properties',
+                name: 'Computed Properties',
+                component: Components.ComputedPropertiesExample,
+        },
 ]
