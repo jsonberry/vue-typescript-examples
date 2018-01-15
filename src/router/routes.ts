@@ -1,6 +1,7 @@
 import * as Components from "@/components"
+import { RouteConfig } from "vue-router"
 
-export const routes = [
+export const routes: RouteConfig[] = [
         {
                 path: "/",
                 name: "Home",
@@ -80,5 +81,22 @@ export const routes = [
                 path: "/plugins",
                 name: "Plugins",
                 component: Components.PluginsExample,
+        },
+        {
+                path: "/router",
+                name: "Router",
+                component: Components.RoutingExample,
+                children: [
+                        {
+                                path: "one",
+                                name: "Routing Example One",
+                                component: Components.RoutingNestedExampleOne,
+                        },
+                        {
+                                path: "two",
+                                name: "Routing Example Two",
+                                component: Components.RoutingNestedExampleTwo,
+                        },
+                ],
         },
 ]

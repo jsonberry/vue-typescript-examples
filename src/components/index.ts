@@ -16,3 +16,7 @@ export { default as WatchExample } from './watch/WatchExample.vue'
 export { default as ComputedPropertiesExample } from './computed-properties/ComputedPropertiesExample.vue'
 export { default as FiltersExample } from './filters/FiltersExample.vue'
 export { default as PluginsExample } from './plugins/PluginsExample.vue'
+
+export { default as RoutingNestedExampleOne } from './routing/RoutingNestedExampleOne.vue'
+export { default as RoutingNestedExampleTwo } from './routing/RoutingNestedExampleTwo.vue'
+export { default as RoutingExample } from './routing/RoutingExample.vue'
