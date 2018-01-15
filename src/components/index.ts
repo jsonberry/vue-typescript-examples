@@ -14,3 +14,4 @@ export { default as PassingPropertiesDownExampleChild } from './passing-properti
 export { default as PassingPropertiesDownExample } from './passing-properties-down/PassingPropertiesDownExample.vue'
 export { default as WatchExample } from './watch/WatchExample.vue'
 export { default as ComputedPropertiesExample } from './computed-properties/ComputedPropertiesExample.vue'
+export { default as FilterExample } from './filters/FilterExample.vue'

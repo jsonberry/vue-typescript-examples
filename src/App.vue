@@ -7,19 +7,19 @@
 </template>
 
 <script lang="ts">
-import { Vue, Component, Provide } from '@/vue-script'
-import * as Style from '@/style'
-import { css, injectGlobal } from 'emotion'
+import { Vue, Component, Provide } from "@/vue-script"
+import * as Style from "@/style"
+import { css, injectGlobal } from "emotion"
 
 @Component({})
 export default class App extends Vue {
-        @Provide() author = 'Jason Awbrey'
+        @Provide() author = "Jason Awbrey"
 
         get style() {
                 return css({
                         fontFamily: "'Avenir', Helvetica, Arial, sans-serif",
-                        textAlign: 'center',
-                        marginTop: '60px',
+                        textAlign: "center",
+                        marginTop: "60px",
                         a: Style.ANCHOR,
                 })
         }
@@ -34,6 +34,7 @@ export default class App extends Vue {
                                 },
                                 {},
                         ),
+                        { ul: Style.UNORDERED_LIST },
                 )
         }
 }
