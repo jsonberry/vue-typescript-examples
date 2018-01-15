@@ -34,7 +34,7 @@ function localFilterReverse(value) {
                 localFilterReverse,
         },
 })
-export default class FilterExample extends Vue {
+export default class FiltersExample extends Vue {
         @Inject() author
 }
 </script>

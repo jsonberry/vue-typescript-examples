@@ -1,2 +1,2 @@
-import './myplugin'
-import './vuerx.plugin'
+import "./square.plugin"
+import "./vuerx.plugin"

@@ -74,6 +74,11 @@ export const routes = [
         {
                 path: "/filters",
                 name: "Filters",
-                component: Components.FilterExample,
+                component: Components.FiltersExample,
+        },
+        {
+                path: "/plugins",
+                name: "Plugins",
+                component: Components.PluginsExample,
         },
 ]
