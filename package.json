@@ -6,10 +6,10 @@
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "start": "npm run dev",
+    "start": "npm run dev & npm run format.watch",
     "build": "node build/build.js",
-    "format.watch": "onchange './src/**/*.ts' -- prettier --write {{changed}}",
-    "format": "prettier --write ./src/**/*.ts"
+    "format.watch": "onchange './src/**/**/*.{vue,ts,js}' -e './src/components/index.ts' -- prettier --write {{changed}}",
+    "format": "prettier --ignore-path ./prettierignore --write ./src/**/**/*.{vue,ts,js}"
   },
   "dependencies": {
     "axios": "^0.17.1",
@@ -19,7 +19,7 @@
     "immutable": "^3.8.2",
     "lodash": "^4.17.4",
     "onchange": "^3.3.0",
-    "prettier": "^1.9.2",
+    "prettier": "^1.10.2",
     "rxjs": "^5.5.6",
     "typestyle": "^1.6.0",
     "vue": "^2.5.2",

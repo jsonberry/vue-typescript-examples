@@ -56,4 +56,14 @@ export const routes = [
                 name: 'Event Emitting',
                 component: Components.EventEmittingExample,
         },
+        {
+                path: '/passing-properties',
+                name: 'Passing Properties Down to Components',
+                component: Components.PassingPropertiesDownExample,
+        },
+        {
+                path: '/watch',
+                name: 'Watch (..for changes to data, and respond)',
+                component: Components.WatchExample,
+        },
 ]

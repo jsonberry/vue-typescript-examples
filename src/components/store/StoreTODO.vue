@@ -28,4 +28,3 @@ export default class StoreComponent extends Vue {
         }
 }
 </script>
-

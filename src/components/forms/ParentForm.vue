@@ -39,7 +39,7 @@
 
 <script lang="ts">
 import { Vue, Component, Watch } from '@/vue-script'
-import { CustomFormInput } from '@/components';
+import { CustomFormInput } from '@/components'
 import { css } from 'emotion'
 
 @Component({
@@ -77,7 +77,9 @@ export default class FormPage extends Vue {
 
         // Vue Computed Property
         get fullName() {
-                return `${this.formData.firstName.entry} ${this.formData.lastName.entry}`
+                return `${this.formData.firstName.entry} ${
+                        this.formData.lastName.entry
+                }`
         }
 
         submit() {

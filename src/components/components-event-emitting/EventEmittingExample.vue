@@ -13,8 +13,8 @@ import { ChildEventEmittingExample } from '@/components'
 
 @Component({
         components: {
-                ChildEventEmittingExample
-        }
+                ChildEventEmittingExample,
+        },
 })
 export default class EventEmittingExample extends Vue {
         @Emit()

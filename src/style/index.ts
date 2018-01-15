@@ -26,11 +26,11 @@ export const LIST_ITEM = {
 
 export type Button = {
         color: string
-        padding: string,
-        background: string,
-        fontSize: string,
-        cursor: string,
-        borderRadius: string,
+        padding: string
+        background: string
+        fontSize: string
+        cursor: string
+        borderRadius: string
 }
 
 export const BUTTON: Button = {

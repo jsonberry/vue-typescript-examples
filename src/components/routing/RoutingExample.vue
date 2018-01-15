@@ -1,20 +1,26 @@
 <template>
-
+        <div></div>
 </template>
 
 
 <script lang="ts">
-// TODO
-// routing with $router
-// show $route object
-// routing via template with router links
-// sub routing
-// watching $route
-// router navigation guards
-// passing parameters
-        // @Watch('$route')
-        // doThings(newVal, oldVal) {
-        //         console.log('route changed');
-        //         // console.log(newVal)
-        // }
+import { Vue, Component, Watch } from '@/vue-script'
+import Router from 'vue-router'
+
+@Component({})
+export default class RoutingExampe extends Vue {
+        beforeRouteEnter(to, from, next) {
+                console.log('beforeRouteEnter')
+                next()
+        }
+
+        beforeRouteLeave(to, from, next) {
+                console.log('beforeRouteLeave')
+        }
+
+        @Watch('$route')
+        doThings(newVal, oldVal) {
+                console.log('route changed')
+        }
+}
 </script>

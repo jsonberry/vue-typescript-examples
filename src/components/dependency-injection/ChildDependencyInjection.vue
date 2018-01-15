@@ -35,4 +35,3 @@ export default class ChildDependencyInjection extends Vue {
         @Inject() author
 }
 </script>
-

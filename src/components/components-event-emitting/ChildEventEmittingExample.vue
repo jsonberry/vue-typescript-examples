@@ -10,6 +10,6 @@ import { Vue, Component, Emit } from '@/vue-script'
 @Component({})
 export default class ChildEventEmittingExample extends Vue {
         @Emit('emission-from-child')
-        crossComponentEmission(){}
+        crossComponentEmission() {}
 }
 </script>

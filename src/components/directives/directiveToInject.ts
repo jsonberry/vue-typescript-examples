@@ -3,13 +3,12 @@ import { DirectiveOptions, VNodeDirective, VNode } from 'vue'
 // https://emotion.sh/
 import { css, cx } from 'emotion' // CSS-in-JS project, unrelated to Vue
 
-
 export const injectedDirective: DirectiveOptions = {
         bind(
                 el: HTMLElement, // if you type these
-                binding: VNodeDirective, // you get great intellisense
+                binding: VNodeDirective, // you get great type inference
                 vnode: VNode, // try typing vnode. in this function
-                oldVnode: VNode // and you'll see what TypeScript + VS Code Intellisense will give us
+                oldVnode: VNode, // and you'll see what TypeScript + VS Code will give us
         ) {
                 console.log('Directive: el', el)
                 console.log('Directive: binding', binding)
@@ -28,10 +27,7 @@ export const injectedDirective: DirectiveOptions = {
                 `
 
                 el.classList.add(
-                        cx(
-                                { [cssClass1]: true },
-                                { [cssClass2]: true },
-                        )
+                        cx({ [cssClass1]: true }, { [cssClass2]: true }),
                 )
         },
         inserted() {

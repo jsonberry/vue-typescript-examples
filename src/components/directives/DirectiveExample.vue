@@ -7,12 +7,12 @@
 
 <script lang="ts">
 import { Vue, Component } from '@/vue-script'
-import { injectedDirective } from './directiveToInject';
+import { injectedDirective } from './directiveToInject'
 
 @Component({
         directives: {
-                injectedDirective
-        }
+                injectedDirective,
+        },
 })
 export default class DirectiveExample extends Vue {}
 </script>

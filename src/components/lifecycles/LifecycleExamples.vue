@@ -14,7 +14,7 @@ import axios from 'axios'
 import CustomFormInput from '@/components/forms/CustomFormInput.vue'
 
 import { BUTTON } from '@/style'
-import { css } from 'emotion';
+import { css } from 'emotion'
 
 @Component({})
 export default class LifecycleExamples extends Vue {
@@ -28,7 +28,7 @@ export default class LifecycleExamples extends Vue {
 
         get style() {
                 return css({
-                        ...BUTTON
+                        ...BUTTON,
                 })
         }
 
@@ -167,14 +167,14 @@ export default class LifecycleExamples extends Vue {
                 // This will fail
                 // console.log('beforeRouteEnter', this.componentProperty)
                 console.log(
-                        "beforeRouteEnter - kicking off HTTP request for Author name, don't load the route yet!"
+                        "beforeRouteEnter - kicking off HTTP request for Author name, don't load the route yet!",
                 )
                 axios
                         .get('https://api.myjson.com/bins/10hyj5')
                         .then(({ data: { author } }) => author) // Deep ES6 Parameter Destructuring
                         .then((author: string) => {
                                 console.log(
-                                        "beforeRouteEnter - faking 3 second async call, don't load the route yet!"
+                                        "beforeRouteEnter - faking 3 second async call, don't load the route yet!",
                                 )
                                 // Fake some more async time, route should wait 3 seconds to render
                                 setTimeout(() => {
@@ -182,7 +182,7 @@ export default class LifecycleExamples extends Vue {
                                         // beforeRouteEnter is the only guard that supports passing a callback to next
                                         next(vm => {
                                                 console.log(
-                                                        'beforeRouteEnter, inside the next callback, set the author and render the view!'
+                                                        'beforeRouteEnter, inside the next callback, set the author and render the view!',
                                                 )
                                                 // this.author = author // this would fail, no access to the Vue instance yet
                                                 vm.author = author
@@ -197,14 +197,16 @@ export default class LifecycleExamples extends Vue {
          */
         async beforeRouteLeave(to, from, next) {
                 const answer = window.confirm(
-                        '(beforeRouteLeave) Do you really want to leave? (Leaving will take 3 seconds)'
+                        '(beforeRouteLeave) Do you really want to leave? (Leaving will take 3 seconds)',
                 )
                 if (answer) {
                         // async/await being used here just as example, just to show it can be used with Vue Router Navigation Guards
                         await new Promise((resolve, reject) => {
                                 setTimeout(() => {
-                                        resolve("Is that air you think you're breathing?")
-                                }, 3000);
+                                        resolve(
+                                                "Is that air you think you're breathing?",
+                                        )
+                                }, 3000)
                         })
                         next() // let me outta here!
                 } else {
