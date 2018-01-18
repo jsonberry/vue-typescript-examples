@@ -1,17 +1,19 @@
-import { MutationTree, GetterTree, ActionTree, Module } from 'vuex'
+import { GetterTree, Module } from "vuex"
 
-export interface ToDo {
-        task: string
-        done: boolean
+export interface Person {
+        first: string
+        last: string
+        full?: string
+        properties: any
+        value?: any
 }
 
-export interface ToDoState {
-        todos: ToDo[]
+export interface PeopleState {
+        people: Person[]
 }
 
 export interface RootState {
-        todo: ToDoState
-        login: any
+        people: PeopleState
 }
 
-export type ToDoGetter = GetterTree<ToDoState, RootState>
+export type PeopleGetter = GetterTree<PeopleState, RootState>

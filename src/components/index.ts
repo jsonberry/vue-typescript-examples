@@ -20,3 +20,10 @@ export { default as PluginsExample } from './plugins/PluginsExample.vue'
 export { default as RoutingNestedExampleOne } from './routing/RoutingNestedExampleOne.vue'
 export { default as RoutingNestedExampleTwo } from './routing/RoutingNestedExampleTwo.vue'
 export { default as RoutingExample } from './routing/RoutingExample.vue'
+
+export { default as AnimationExampleCSS } from './animation/AnimationExampleCSS.vue'
+export { default as AnimationExampleJS } from './animation/AnimationExampleJS.vue'
+export { default as AnimationExampleThirdPartyLibrary } from './animation/AnimationExampleThirdPartyLibrary.vue'
+export { default as AnimationExample } from './animation/AnimationExample.vue'
+
+export { default as StoreExample } from './store/StoreExample.vue'

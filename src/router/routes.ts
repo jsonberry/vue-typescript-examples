@@ -35,7 +35,25 @@ export const routes: RouteConfig[] = [
         {
                 path: "/animation",
                 name: "Animation",
-                component: Components.ParentCustomVueTsDecorator,
+                component: Components.AnimationExample,
+                children: [
+                        {
+                                path: "css",
+                                name: "Animation with CSS",
+                                component: Components.AnimationExampleCSS,
+                        },
+                        {
+                                path: "js",
+                                name: "Animation with JS",
+                                component: Components.AnimationExampleJS,
+                        },
+                        {
+                                path: "third-party-library",
+                                name: "Animation with Third Party Library",
+                                component:
+                                        Components.AnimationExampleThirdPartyLibrary,
+                        },
+                ],
         },
         {
                 path: "/lifecycles",
@@ -98,5 +116,10 @@ export const routes: RouteConfig[] = [
                                 component: Components.RoutingNestedExampleTwo,
                         },
                 ],
+        },
+        {
+                path: "/store",
+                name: "Store (State Management - Vuex)",
+                component: Components.StoreExample,
         },
 ]

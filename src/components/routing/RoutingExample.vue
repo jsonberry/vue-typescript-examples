@@ -31,8 +31,8 @@ export default class RoutingExample extends Vue {
          *      can use the type defs from Vue Router
          *
          *      Routing is an important topic
-         *      The goal of this project is to showcase how to use Vue with TypeScript
-         *      With that in mind, I won't dive deeply into Vue Router - it's not necessary for TypeScript
+         *      The goal of this project is to showcase examples of the Vue API mixed with TypeScript
+         *      With that in mind, I'm not going to dive deeply into routing
          *
          *      You can certainly enhance the routing inside the app with interfaces and enums and such
          *      I'll leave that to your imagination
