@@ -27,3 +27,8 @@ export { default as AnimationExampleThirdPartyLibrary } from './animation/Animat
 export { default as AnimationExample } from './animation/AnimationExample.vue'
 
 export { default as StoreExample } from './store/StoreExample.vue'
+
+export { default as AsyncCodeSplittingHelperOne } from './components-async-code-splitting/AsyncCodeSplittingHelperOne.vue'
+export { default as AsyncCodeSplittingHelperTwo } from './components-async-code-splitting/AsyncCodeSplittingHelperTwo.vue'
+export { default as AsyncCodeSplittingHelperThree } from './components-async-code-splitting/AsyncCodeSplittingHelperThree.vue'
+export { default as AsyncCodeSplittingExample } from './components-async-code-splitting/AsyncCodeSplittingExample.vue'

@@ -2,7 +2,7 @@
     <div>
         <div>{{ otherPeople }}</div>
         <template v-for="(person, index) in otherPeople">
-                <div>
+                <div :key="index">
                         <p>{{person.value}}</p>
                         <input @change="updateValue({
                                 value: person.value,
@@ -19,7 +19,7 @@ import { Vue, Component, Getter, namespace, Mutation } from "@/vue-script"
 const PeopleGetters = namespace("people", Getter)
 const PeopleMutations = namespace("people", Mutation)
 
-@Component
+@Component({})
 export default class StoreExample extends Vue {
         @PeopleGetters otherPeople
         @PeopleMutations updateValue

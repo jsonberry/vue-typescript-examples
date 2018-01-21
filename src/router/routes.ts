@@ -122,4 +122,9 @@ export const routes: RouteConfig[] = [
                 name: "Store (State Management - Vuex)",
                 component: Components.StoreExample,
         },
+        {
+                path: "/async-code-splitting",
+                name: "Async Code Splitting Components",
+                component: Components.AsyncCodeSplittingExample,
+        },
 ]
