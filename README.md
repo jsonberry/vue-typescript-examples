@@ -2,8 +2,9 @@
 * Showcase TypeScript + Vue (bring types in from official Vue packages, etc)
 * Dig deep into the Vue API and show examples from beginner to advanced
 * Document the examples with verbose notes right in the code
+* Explore Vue app structures
 
-Only the lowest hanging fruit has been completed - advanced topics and examples will get added over time.
+We'll tackle the low-hanging fruit first, the beginner and intermediate stuff, with a goal of adding advanced topics and examples.
 
 ## Get Started
 * Clone the repository
