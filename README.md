@@ -1,27 +1,16 @@
-Based on vue-webpack-template, upgraded with a few packages, readme will get filled in more later.
+# Vue TypeScript Examples
+The purpose of this repository is to dig deep into the Vue API and to work out how to integrate types correctly in TypeScript.
 
-# TODO
-1. Fill out readme more better
-2. Profit
+Only the lowest hanging fruit has been completed - advanced topics and examples will get added over time.
 
-# vue-webpack-template
+## Get Started
+* Clone the repository
+* `yarn` to install dependencies
+* `yarn start` to spin up the dev server
 
-> A Vue.js project
+With the dev server open, navigate around and check the source code that matches with the examples, or just poke around the repository.
 
-## Build Setup
+## Contributing
+If you see any issues please add an issue here: https://github.com/jsonberry/vue-typescript-examples/issues
 
-``` bash
-# install dependencies
-npm install # naw dawg, I def yarn
-
-# serve with hot reload at localhost:8080
-npm run dev # naw dawg, I def yarn start
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+If you want to contribute to examples, make pull request!
