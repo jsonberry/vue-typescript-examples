@@ -1,3 +1,6 @@
+
+> Note: These examples are valid, but were done in January 2018. I will revisit after Vue 3 is released to update examples, config, and add advanced examples. Thanks! :)
+---
 # Vue TypeScript Examples
 * Showcase TypeScript + Vue (bring types in from official Vue packages, etc)
 * Dig deep into the Vue API and show examples from beginner to advanced
